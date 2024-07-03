@@ -59,7 +59,7 @@ endif(CMAKE_BUILD_TYPE MATCHES Release)
 include_directories(include)
 
 # create our capture library
-add_library(openpnp-capture SHARED common/libmain.cpp
+add_library(openpnp-capture STATIC common/libmain.cpp
                                    common/context.cpp
                                    common/logging.cpp
                                    common/stream.cpp)
