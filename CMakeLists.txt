@@ -87,6 +87,7 @@ IF (WIN32)
     target_sources(openpnp-capture PRIVATE win/platformcontext.cpp
                                            win/platformstream.cpp)
     target_link_libraries(openpnp-capture strmiids)
+    target_link_libraries(openpnp-capture winmm)
 
     # add windows-specific test application
     add_subdirectory(win/tests)

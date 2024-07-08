@@ -36,6 +36,7 @@
 #include <stdint.h>
 
 #pragma comment(lib, "strmiids")
+#pragma comment(lib, "winmm")
 
 #include "openpnp-capture.h"
 
