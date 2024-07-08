@@ -50,6 +50,7 @@
 
 // make sure its exported/imported as pure C 
 // even if we're compiling with a C++ compiler
+/*
 #ifdef BUILD_OPENPNP_LIBRARY
     #ifdef __cplusplus
         #define DLLPUBLIC extern "C" SO_EXPORT
@@ -63,6 +64,8 @@
         #define DLLPUBLIC SO_IMPORT
     #endif
 #endif
+*/
+#define DLLPUBLIC
 
 typedef void*    CapContext;    ///< an opaque pointer to the internal Context*
 typedef int32_t  CapStream;     ///< a stream identifier (normally >=0, <0 for error)
